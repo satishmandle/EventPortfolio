@@ -10,24 +10,27 @@ body, html {
     padding-bottom: 0%;
     
 }
-.out-logo{
-    display:flex;
-    justify-content:space-between;
-    align-items:start;
-    height:100px;
+.smallicon{
+    height: 100px;
     width:100px;
-    padding-left: 500px;
+}
+.out-logo{
+    display: flex;
+    align-items:start;
+    height:20px;
+    width:100px;
+    padding-left: 120px;
 }
 .py-logo{
-    position:fixed;
-    display:flex;
-    justify-content: space-around;
-    align-items: end;
+    width:auto;
+    height:60px;
+    margin-right:10px;
+    align-items: center;
 }
 .in-py{
-    height:100px;
-    width:100px;
-    display: flex;
+    margin-right:20px;
+    height:50px;
+    width:50px;
     background-size: cover;
     background-image: url('videos/img.jpg1.png');
 } 
@@ -48,7 +51,7 @@ body, html {
 .watsapp{
     position:fixed;
     padding-top: 400px;
-    padding-left: 50px;
+    padding-left: 25px;
     height: 100px;
     width:100px;
     margin-top: 0%;
@@ -60,9 +63,13 @@ body, html {
     transition: 0.5s ease-in;
 }
 
-.headbar{
-    height: auto;
-    width:20%;
+.logo1{
+    margin-left: 180px;
+    background-image: url('videos/poster-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width:50px;
 }
 .headbar img{
     border-radius: 60%;
@@ -85,13 +92,21 @@ body, html {
     border:2px  solid rgb(123, 125, 126);
 }
 .logo-container{
-    display:flex;
-    justify-content: center;
-    height:auto;
-    width:100%;
+    background-image: url('videos/poster-bg.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-self:flex-end;
+    align-self: center;
+    width:65%;
+    height: 10rem;
     padding-top: 70px;
-   
-
+    padding-right:100px;
+}
+.clubname{
+    font-weight: 1000;
+    color: #fff;
+    font-size: 15px;
 }
 .logo {
     display: flex;
@@ -131,7 +146,7 @@ body, html {
 }
 
 #sir-info {
-    padding-left:250px;
+    padding-left:200px;
     padding-top:20px;
     list-style-type: none;
     color:aliceblue;
@@ -146,7 +161,13 @@ body, html {
     padding-left: 70px;
 }
 
-
+.event-heading{
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-variant:small-caps;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    white-space:initial;
+}
 .event-list{
     background-color: white;
     height:auto;
@@ -241,29 +262,6 @@ body, html {
     background-size: cover;
     background-image: url('Members/vasudev-sir.jpg');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .member1{
     background-image: url('Members/Satish.jpg');
 }

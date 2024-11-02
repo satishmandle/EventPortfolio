@@ -10,7 +10,13 @@
         height: 80%;
         font-family: Arial, sans-serif;
         padding-bottom: 0%;
-        
+    }
+    .std{
+        color:white; 
+        font-family:Oswald;
+        padding-left:30%;
+        padding-top:50px; 
+        font-size: 4vh;
     }
     .smallicon{
         height: 100px;
@@ -50,11 +56,11 @@
     }
     .watsapp{
         position:fixed;
-        padding-top: 400px;
+        padding-top: 300px;
         padding-left: 25px;
         height: 100px;
         width:100px;
-        margin-top: 0%;
+        margin-top: 10%;
     }
     .watsapp-logo img{
         height: 40px;
@@ -311,9 +317,6 @@
     
     
     /* RESPONSIVE FOR MOBIE  ---> */
-    @media screen {
-        
-    }
     
 @media (max-width:768px){
 * {
@@ -359,7 +362,7 @@ body, html {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100vh;
     height: 100vh;
     object-fit: cover;
     z-index: -1; 
@@ -368,19 +371,19 @@ body, html {
 .watsapp{
     position:fixed;
     padding-top: 400px;
-    padding-left: 25px;
+    padding-left: 5vh;
     height: 100px;
     width:100px;
     margin-top: 0%;
 }
-.watsapp-logo img{
+/* .watsapp-logo img{
     height: 40px;
     width :40px;  
     border-radius: 43%;
     transition: 0.5s ease-in;
-}
+} */
 
-.logo1{
+/* .logo1{
     margin-left: 280px;
     padding-bottom: -30px;
     background-image: url('videos/poster-bg.png');
@@ -389,31 +392,94 @@ body, html {
     height: 60px;
     width:50px;
     position: fixed;
-}
-.headbar {
-    margin-top:20px;
-    padding-left:10px;
+} */
+.head-section{
+    height:100px;
+    width: 100%;
+    background-color:transparent;
     display: flex;
+    justify-content: space-evenly;
+}
+.py-icon{
+color: white;
+display: flex;
+justify-content: space-evenly;
+height:100%;
+margin-top:15px;
+width:45%;
+border:2px solid white;
+border-radius: 25px;
+background-color:black;
+background-image: url('videos/ALvas-cult.jpg');
+background-size: contain;
+background-repeat: no-repeat;
+margin-right: -30px;
+position: inherit;
+top:8px;
+left:10px;
+}
+.college{
+    font-size: x-large;
+    padding-top:40px;
+    margin-right: -70px;
+}
+
+.py-n{
+    height:auto;
+    width:28%;
+    margin-top:30px;
+    margin-bottom: 30px;
+    background-color:transparent;
+    background-image: url('videos/Club-poster4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 6px; /* Adjust to your desired position */
+    right: -200px; /* Adjust for horizontal placement */
+}
+    
+}
+
+.logo2 {
+    height: 55px;
+    width: 100px;
+    margin-top: 6px;
+    background-color: transparent;
+    background-image: url('videos/poster-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 6px; /* Adjust to your desired position */
+    right: -27px; /* Adjust for horizontal placement */
+}
+
+
+
+/* .headbar {
+    margin-top:70px;
+    margin-right: -10px;
+    padding-left:0px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     border-radius:10px;
     height:50px;
     width:60%;
-    background-size: cover;
-    background-image: url('videos/Club-poster4.png');
-    /* background-color: blanchedalmond; */
+    background-color: blanchedalmond;
     padding-right:200px;
-}
+} */
 .header {
     position: relative;
     z-index: 1;
     text-align: center;
     color: #fff;
     padding-top: 0vh;
-    margin-top: 50px;
+    margin-top: 60vh;
     border-radius: 10px;
     border:2px  solid rgb(123, 125, 126);
 }
 .logo-container{
-    background-image: url('videos/poster-bg.png');
+    background-image: url('videos/img.jpg1.png');
     background-size:contain;
     background-repeat: no-repeat;
     display: flex;
@@ -421,7 +487,7 @@ body, html {
     align-self: center;
     width:65%;
     height: 10rem;
-    padding-top: 70px;
+    padding-top:80px;
     padding-right:100px;
 }
 .clubname{
@@ -430,6 +496,7 @@ body, html {
     font-size: 15px;
 }
 .logo {
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -466,20 +533,37 @@ body, html {
     align-items: center;
 }
 
-#sir-info {
+.sir-info {
+    
     padding-left:200px;
     padding-top:20px;
     list-style-type: none;
     color:aliceblue;
 }
-#sir-info ul{
+.sir-info ul{
+    margin-left:-45px;
     list-style-type: none;
     font-family:Poppins
 }
 .sir-image{
+    margin-top: 20px;
     height:auto;
     width:100%;
-    padding-left: 70px;
+    padding-left: 10px;
+}
+.cord{
+    color: #fff;
+    padding:20px;
+    padding-left: 120px;
+
+}
+.std-p{
+    color:white; 
+    font-family:Oswald;
+    width:300px;
+    padding-left: 100px;
+    padding-bottom:12px; 
+    font-size: 4vh;
 }
 
 .event-heading{
@@ -488,6 +572,7 @@ body, html {
     font-variant:small-caps;
     font-family: Georgia, Times, 'Times New Roman', serif;
     white-space:initial;
+    padding-top: 15px;
 }
 .event-list{
     background-color: white;
@@ -497,7 +582,7 @@ body, html {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    padding-top:100px;
+    padding-top:10px;
     font-size: medium;
 }
 .event-list p, h6{
@@ -510,8 +595,8 @@ body, html {
 .member {
     font-family:Poppins;
     font-size: 2rem;
-    height:10rem;
-    width: 10rem;
+    height:11rem;
+    width: 11rem;
     border-radius:10px;
     background-image: url('Members/Me.jpg');
     background-size: contain;
@@ -519,6 +604,7 @@ body, html {
     background-repeat:no-repeat;
     background-color: rgba(255, 255, 255, 0.5);
     transition: 0.3s ease-in;
+    margin-bottom: 12px;
 }
 .member:hover{
     cursor: pointer;
@@ -528,6 +614,9 @@ body, html {
 .member p ,h6{
     padding-left:29px;
     padding-top:230px;
+}
+.right-bio{
+    padding:20px;
 }
 .divide{
     padding-top: 105px;
@@ -626,10 +715,10 @@ body, html {
 .bio:hover{
     transform:scale(1.1);
 }
-
-
-/* RESPONSIVE FOR MOBIE  ---> */
-@media screen {
-    
+.comman{
+    transition: transform 0.5s ease;
 }
+
+.comman.active{
+    transform: scale(1.15) ;
 }

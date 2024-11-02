@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body, html {
     height: 80%;
     font-family: Arial, sans-serif;
@@ -28,9 +29,10 @@ body, html {
     align-items: center;
 }
 .in-py{
-    margin-right:20px;
-    height:50px;
-    width:50px;
+    margin-top:10px;
+    margin-left:-100px;
+    height:55px;
+    width:55px;
     background-size: cover;
     background-image: url('videos/img.jpg1.png');
 } 
@@ -64,20 +66,26 @@ body, html {
 }
 
 .logo1{
-    margin-left: 180px;
+    margin-left: 250px;
     background-image: url('videos/poster-bg.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 60px;
     width:50px;
-}
-.headbar img{
-    border-radius: 60%;
     position: fixed;
-    height:180x;
-    width:400px;
+}
+.headbar {
+    
+    padding:10px;
+    display: flex;
+    border-radius:10px;
+    position: fixed;
+    height:40px;
+    width:50%;
+    background-size: cover;
+    background-image: url('videos/Club-poster4.png');
+    /* background-color: blanchedalmond; */
     padding-left:-200px;
-    background-color: transparent;
 }
 .header {
     position: relative;
@@ -86,7 +94,7 @@ body, html {
     color: #fff;
     padding-top: 0vh;
     margin-top: 50px;
-    border-radius: 35px;
+    border-radius: 10px;
     border:2px  solid rgb(123, 125, 126);
 }
 .logo-container{

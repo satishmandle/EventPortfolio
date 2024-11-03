@@ -394,13 +394,17 @@ body, html {
 }
 .watsapp{
     position:fixed;
-    padding-top: 400px;
-    padding-left: 5vh;
+    padding-top: 100px;
+    padding-left: 4vh;
+    height: 100px;
     height: 100px;
     width:100px;
-    margin-top: 0%;
+    margin-top: 50%;
+    margin-left: 83%;
+    }
 }
 .watsapp-logo img{
+    z-index:3;
     height: 40px;
     width :40px;  
     border-radius: 43%;
@@ -430,22 +434,21 @@ display: flex;
 justify-content: space-evenly;
 height:100%;
 margin-top:15px;
+margin-right: 70px;
 width:45%;
-border:2px solid white;
+border:1px solid white;
 border-radius: 25px;
 background-color:black;
-background-image: url('videos/ALvas-cult.jpg');
+background-image: url('videos/aiet-LOGO.png');
 background-size: contain;
 background-repeat: no-repeat;
-margin-right: -30px;
 position: inherit;
-top:8px;
 left:10px;
 }
 .college{
     font-size: x-large;
-    padding-top:40px;
-    margin-right: -70px;
+    padding-top:35px;
+    margin-right: -85px;
 }
 
 .py-n{
@@ -453,6 +456,7 @@ left:10px;
     width:28%;
     margin-top:30px;
     margin-bottom: 30px;
+    margin-right:70px;
     background-color:transparent;
     background-image: url('videos/Club-poster4.png');
     background-size: contain;
@@ -461,7 +465,7 @@ left:10px;
     right: -200px; /* Adjust for horizontal placement */
 }
     
-}
+
 
 .logo2 {
     height: 55px;
@@ -492,6 +496,20 @@ left:10px;
     background-color: blanchedalmond;
     padding-right:200px;
 } */
+
+.college-info{
+    margin-top: 8vh;
+    margin-left: 10px;
+    height:35vh;
+    width:94%;
+    background: #f1ebeb;
+    background-image: url('videos/AIET.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    
+    
+}
 .header {
     position: relative;
     z-index: 1;
@@ -586,8 +604,8 @@ left:10px;
     color:white; 
     font-family:Oswald;
     width:300px;
-    padding-left: 100px;
-    padding-bottom:12px; 
+    margin-left: 180px;
+    margin-bottom:12px; 
     font-size: 4vh;
 }
 
@@ -617,6 +635,7 @@ left:10px;
     background-color: transparent;
     padding-top:10px;
     font-size: medium;
+    margin-left:10%;
 }
 .event-list p, h6{
     padding-left:10px;

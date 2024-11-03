@@ -1,4 +1,4 @@
-
+@media(min-width:1200px){
 * {
     margin: 0;
     padding:0%;
@@ -149,6 +149,11 @@
         height: 30%;
         color:#fff;
     }
+    .event-list{
+        height:auto;
+        width:100%;
+    }
+    
     .event-menu{
         margin-top:50px;
         display:flex;
@@ -157,10 +162,10 @@
         align-items:center;
         flex-wrap: wrap;
     }
-    /* .event{
+    .event{
         width:400px;
-        height:auto; 
-    } */
+        height:400px; 
+    }
     .footer{
         display:block;
         justify-content: center;
@@ -190,11 +195,7 @@
         font-family: Georgia, Times, 'Times New Roman', serif;
         white-space:initial;
     }
-    .event-list{
-        height:auto;
-        width:200px;
-    }
-    
+   
     .member {
         font-family:Poppins;
         font-size: 2rem;
@@ -315,7 +316,30 @@
         transform:scale(1.1);
     }
     
-    
+    /* Target the entire scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* Style the scrollbar track (the background area behind the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #0a0303; /* Track background color */
+    border-radius: 30px; /* Optional: make the track rounded */
+}
+
+/* Style the scrollbar thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Thumb color */
+    border-radius: 50px; /* Rounded thumb */
+    border: 50px solid #0a6959; /* Space around the thumb */
+}
+
+/* Optional: Hover effect for the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+}   
     /* RESPONSIVE FOR MOBIE  ---> */
     
 @media (max-width:768px){
@@ -376,12 +400,12 @@ body, html {
     width:100px;
     margin-top: 0%;
 }
-/* .watsapp-logo img{
+.watsapp-logo img{
     height: 40px;
     width :40px;  
     border-radius: 43%;
     transition: 0.5s ease-in;
-} */
+}
 
 /* .logo1{
     margin-left: 280px;
@@ -541,9 +565,10 @@ left:10px;
     color:aliceblue;
 }
 .sir-info ul{
-    margin-left:-45px;
+    margin-left:-50px;
     list-style-type: none;
-    font-family:Poppins
+    font-family:Poppins;
+    padding-bottom: 70px;
 }
 .sir-image{
     margin-top: 20px;
@@ -566,6 +591,14 @@ left:10px;
     font-size: 4vh;
 }
 
+/* .event-menu{
+    height:auto;
+    width:100vh;
+    display: flex;
+    overflow-wrap: wrap;
+    justify-content: center;
+    
+} */
 .event-heading{
     font-family:  Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
@@ -577,7 +610,7 @@ left:10px;
 .event-list{
     background-color: white;
     height:auto;
-    width:100%;
+    width:80%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -632,10 +665,11 @@ left:10px;
 .event{
     font-family:Poppins;
     font-size: 4rem;
-    height:18rem;
-    width: 50%;
+    margin-top:70px;
+    height:14rem;
+    width: 45%;
     border-radius:10px;
-    background-size: cover;
+    background-size: contain;
     background-position:center ;
     background-repeat:no-repeat;
     border:3px solid white;
@@ -647,6 +681,10 @@ left:10px;
 }
 .event1{
     background-image: url('Event-images/Debug.webp');
+}
+.event1 p{
+    color: white;
+    margin-top:-10px;
 }
 .event2{
     background-image: url('Event-images/Event-1.jpg');
@@ -671,6 +709,10 @@ left:10px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('Members/vasudev-sir.jpg');
+}
+
+.even-member{
+    padding-left:80px;
 }
 .member1{
     background-image: url('Members/Satish.jpg');

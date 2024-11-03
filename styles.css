@@ -429,16 +429,16 @@ body, html {
     justify-content: space-evenly;
 }
 .py-icon{
-color: white;
+color: rgb(0, 0, 0);
 display: flex;
 justify-content: space-evenly;
 height:100%;
 margin-top:15px;
 margin-right: 70px;
-width:45%;
+width:35%;
 border:1px solid white;
 border-radius: 25px;
-background-color:black;
+background-color:white ;
 background-image: url('videos/aiet-LOGO.png');
 background-size: contain;
 background-repeat: no-repeat;
@@ -499,16 +499,13 @@ left:10px;
 
 .college-info{
     margin-top: 8vh;
-    margin-left: 10px;
+    margin-left: 12px;
     height:35vh;
     width:94%;
-    background: #f1ebeb;
     background-image: url('videos/AIET.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     padding-bottom: 50px;
-    
-    
 }
 .header {
     position: relative;
@@ -734,10 +731,12 @@ left:10px;
     padding-left:80px;
 }
 .member1{
-    background-image: url('Members/Satish.jpg');
+    background-image: url('Members/MY-img2.jpg');
+    background-size: contain;
+    
+
 }
 .member2{
-    
     background-image: url('Members/Gousiya-g.jpg');
     background-size: contain;
 }

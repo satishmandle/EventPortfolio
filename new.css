@@ -1,0 +1,785 @@
+/*@media(min-width:1200px){
+* {
+    margin: 0;
+    padding:0%;
+    box-sizing: border-box;
+    }
+    
+    
+    body, html {
+        height: 80%;
+        font-family: Arial, sans-serif;
+        padding-bottom: 0%;
+    }
+    .std{
+        color:white; 
+        font-family:Oswald;
+        padding-left:30%;
+        padding-top:50px; 
+        font-size: 4vh;
+    }
+    .smallicon{
+        height: 100px;
+        width:100px;
+    }
+    .out-logo{
+        display: flex;
+        align-items:start;
+        height:20px;
+        width:100px;
+        padding-left: 35%;
+    }
+    .py-logo{
+        width:auto;
+        height:60px;
+        margin-right:10px;
+        align-items: center;
+    }
+    .in-py{
+        margin-top:15px;
+        margin-left:-80px;
+        height:55px;
+        width:55px;
+        background-size: cover;
+        background-image: url('videos/img.jpg1.png');
+    } 
+    
+    #background-video  {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1; 
+        
+    }
+    .watsapp{
+        position:fixed;
+        padding-top: 300px;
+        padding-left: 25px;
+        height: 100px;
+        width:100px;
+        margin-top: 10%;
+    }
+    .watsapp-logo img{
+        height: 40px;
+        width :40px;  
+        border-radius: 43%;
+        transition: 0.5s ease-in;
+    }
+    
+    .logo1{
+        margin-left: 280px;
+        padding-bottom: -30px;
+        background-image: url('videos/poster-bg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 60px;
+        width:50px;
+        position: fixed;
+    }
+    .headbar {
+        margin-top:20px;
+        padding-left:10px;
+        display: flex;
+        border-radius:10px;
+        height:50px;
+        width:60%;
+        background-size: cover;
+        background-image: url('videos/Club-poster4.png');
+        /* background-color: blanchedalmond; */
+        /*padding-right:200px;
+    }
+    .header {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: #fff;
+        padding-top: 0vh;
+        margin-top: 50px;
+        border-radius: 10px;
+        border:2px  solid rgb(123, 125, 126);
+    }
+    .logo-container{
+        background-image: url('videos/poster-bg.png');
+        background-size:contain;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-self:flex-end;
+        align-self: center;
+        width:65%;
+        height: 10rem;
+        padding-top: 70px;
+        padding-right:100px;
+    }
+    .clubname{
+        font-weight: 1000;
+        color: #fff;
+        font-size: 15px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        position: relative;
+        background-color: transparent;
+    }
+    
+    .logo img {
+        width: 600px;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s ease;
+    }
+    .logo:hover{
+        cursor:pointer;
+        transform: scale(1.1);
+    }
+    
+    .wellcome{
+        padding-top:2px;
+        padding-left:45%;
+        height: 30%;
+        color:#fff;
+    }
+    .event-list{
+        height:auto;
+        width:100%;
+    }
+    
+    .event-menu{
+        margin-top:50px;
+        display:flex;
+        gap:80px;
+        justify-content: space-evenly;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    .event{
+        width:400px;
+        height:400px; 
+    }
+    .footer{
+        display:block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #sir-info {
+        padding-left:200px;
+        padding-top:20px;
+        list-style-type: none;
+        color:aliceblue;
+    }
+    #sir-info ul{
+        list-style-type: none;
+        font-family:Poppins
+    }
+    .sir-image{
+        height:auto;
+        width:100%;
+        padding-left: 70px;
+    }
+    
+    .event-heading{
+        font-family:  Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 100;
+        font-variant:small-caps;
+        font-family: Georgia, Times, 'Times New Roman', serif;
+        white-space:initial;
+    }
+   
+    .member {
+        font-family:Poppins;
+        font-size: 2rem;
+        height:10rem;
+        width: 10rem;
+        border-radius:10px;
+        background-image: url('Members/Me.jpg');
+        background-size: contain;
+        background-position:center ;
+        background-repeat:no-repeat;
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: 0.3s ease-in;
+    }
+    .member:hover{
+        cursor: pointer;
+        transform:scale(1.1)
+    }
+    
+    .member p ,h6{
+        padding-left:29px;
+        padding-top:230px;
+    }
+    .divide{
+        padding-top: 105px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height:60px;
+        width:100%;
+        color: white;
+        background-color:transparent;
+    }
+    .event{
+        font-family:Poppins;
+        font-size: 4rem;
+        height:200px;
+        width: 200px;
+        border-radius:10px;
+        background-size: cover;
+        background-position:center ;
+        background-repeat:no-repeat;
+        border:3px solid white;
+        transition: 0.2s ease-in;
+    } 
+    .event:hover{
+        cursor: pointer;
+        transform:scale(1.1)
+    }
+    .event1{
+        background-image: url('Event-images/Debug.webp');
+    }
+    .event2{
+        background-image: url('Event-images/Event-1.jpg');
+    }
+    .event3
+    {
+        background-image: url('Event-images/Debuging.jpg');   
+    }
+    .event4{
+        background-image: url('Event-images/PyConZA.png');
+    }
+    .event5{
+        background-image: url('Event-images/python-image-bg.png');
+    }
+    
+    .cord-img{
+        margin-left: 25%;
+        height:220px;
+        width: 220px;
+        background-color: antiquewhite;
+        border-radius: 15%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('Members/vasudev-sir.jpg');
+    }
+    .member1{
+        background-image: url('Members/Satish.jpg');
+    }
+    .member2{
+        
+        background-image: url('Members/Gousiya-g.jpg');
+        background-size: contain;
+    }
+    .member3{
+        background-image: url('Members/Shantveer.jpg');
+    }
+    .member4{
+        background-image: url('Members/Abhijit.jpg');
+    }
+    .member5{
+        background-image: url();
+    }
+    .linkedin{
+        width:30px;
+        height:30px;
+        transition: 0.1s ease-in;
+    }
+    
+    .linkedin:hover{
+        transform:scale(1.1);
+    }
+    
+    .bio ul{
+        padding-left: 30px;
+        color: #fff;
+        list-style-type: none;
+    }
+    .bio li{
+        margin-bottom: 8px;
+        font-family: 'Great Vibes', cursive;
+    }
+    .bio{
+        cursor:text;
+        transition:cubic-bezier(1, 0, 0, 1) ease-in;
+    }
+    .bio:hover{
+        transform:scale(1.1);
+    }
+    
+    /* Target the entire scrollbar */
+/*::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+/* } */
+
+/* Style the scrollbar track (the background area behind the scrollbar) */
+/* ::-webkit-scrollbar-track { */
+    /* background: #0a0303; Track background color */
+    /* border-radius: 30px; Optional: make the track rounded */
+/* } */
+
+/* Style the scrollbar thumb (the draggable part of the scrollbar) */
+/* ::-webkit-scrollbar-thumb { */
+    /* background-color: #888; Thumb color */
+    /* border-radius: 50px; Rounded thumb */
+    /* border: 50px solid #0a6959; Space around the thumb */
+/* } */
+
+/* Optional: Hover effect for the thumb */
+/* ::-webkit-scrollbar-thumb:hover { */
+    /* background-color: #555; Darker color on hover */
+/* } */
+/*  */
+/* }    */
+    /* RESPONSIVE FOR MOBIE  ---> */
+    
+/* @media (max-width:768px){ */
+* {
+    margin: 0;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    height: 80%;
+    font-family: Arial, sans-serif;
+    padding-bottom: 0%;
+    
+}
+.smallicon{
+    height: 100px;
+    width:100px;
+}
+.out-logo{
+    display: flex;
+    align-items:start;
+    height:20px;
+    width:100px;
+    padding-left: 120px;
+}
+.py-logo{
+    width:auto;
+    height:60px;
+    margin-right:10px;
+    align-items: center;
+}
+.in-py{
+    margin-top:15px;
+    margin-left:-80px;
+    height:55px;
+    width:55px;
+    background-size: cover;
+    background-image: url('videos/img.jpg1.png');
+} 
+
+#background-video  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; 
+    
+}
+.watsapp{
+    position:fixed;
+    padding-top: 100px;
+    padding-left: 4vh;
+    height: 100px;
+    height: 100px;
+    width:100px;
+    margin-top: 50%;
+    margin-left: 83%;
+    }
+
+.watsapp-logo img{
+    z-index:3;
+    height: 40px;
+    width :40px;  
+    border-radius: 43%;
+    transition: 0.5s ease-in;
+}
+
+/* .logo1{
+    margin-left: 280px;
+    padding-bottom: -30px;
+    background-image: url('videos/poster-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width:50px;
+    position: fixed;
+} */
+.head-section{
+    height:100px;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+.py-icon{
+color: rgb(0, 0, 0);
+display: flex;
+justify-content: space-evenly;
+height:100%;
+margin-top:15px;
+margin-right: 70px;
+width:35%;
+border:1px solid white;
+border-radius: 25px;
+background-color:white ;
+background-image: url('videos/aiet-LOGO.png');
+background-size: contain;
+background-repeat: no-repeat;
+position: inherit;
+left:10px;
+}
+.college{
+    font-size: x-large;
+    padding-top:35px;
+    margin-right: -85px;
+}
+
+.py-n{
+    height:auto;
+    width:28%;
+    margin-top:30px;
+    margin-bottom: 30px;
+    margin-right:70px;
+    background-color:transparent;
+    background-image: url('videos/Club-poster4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 6px; /* Adjust to your desired position */
+    right: -200px; /* Adjust for horizontal placement */
+}
+
+.logo2 {
+    height: 55px;
+    width: 100px;
+    margin-top: 6px;
+    background-color: transparent;
+    background-image: url('videos/poster-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 6px; /* Adjust to your desired position */
+    right: -27px; /* Adjust for horizontal placement */
+}
+
+
+
+/* .headbar {
+    margin-top:70px;
+    margin-right: -10px;
+    padding-left:0px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius:10px;
+    height:50px;
+    width:60%;
+    background-color: blanchedalmond;
+    padding-right:200px;
+} */
+
+.college-info{
+    margin-top: 8vh;
+    margin-left: 12px;
+    height:35vh;
+    width:94%;
+    background-image: url('videos/AIET.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+.header {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding-top: 0vh;
+    margin-top: 60vh;
+    border-radius: 10px;
+    border:2px  solid rgb(123, 125, 126);
+}
+.logo-container{
+    background-image: url('videos/img.jpg1.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-self:flex-end;
+    align-self: center;
+    width:65%;
+    height: 10rem;
+    padding-top:80px;
+    padding-right:100px;
+}
+.clubname{
+    font-weight: 1000;
+    color: #fff;
+    font-size: 15px;
+}
+.logo {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+}
+
+.logo img {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+}
+.logo:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+.wellcome{
+    padding-top:2px;
+    padding-left:45%;
+    height: 30%;
+    color:#fff;
+}
+.footer{
+    display:block;
+    justify-content: center;
+    align-items: center;
+}
+
+.sir-info {
+    
+    padding-left:200px;
+    padding-top:20px;
+    list-style-type: none;
+    color:aliceblue;
+}
+.sir-info ul{
+    margin-left:-50px;
+    list-style-type: none;
+    font-family:Poppins;
+    padding-bottom: 70px;
+}
+.sir-image{
+    margin-top: 20px;
+    height:auto;
+    width:100%;
+    padding-left: 10px;
+}
+.cord{
+    color: #fff;
+    padding:20px;
+    padding-left: 120px;
+
+}
+.std-p{
+    color:white; 
+    font-family:Oswald;
+    width:300px;
+    margin-left: 180px;
+    margin-bottom:12px; 
+    font-size: 4vh;
+}
+
+/* .event-menu{
+    height:auto;
+    width:100vh;
+    display: flex;
+    overflow-wrap: wrap;
+    justify-content: center;
+    
+} */
+.event-heading{
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-variant:small-caps;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    white-space:initial;
+    padding-top: 15px;
+}
+.event-list{
+    background-color: white;
+    height:auto;
+    width:80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-top:10px;
+    font-size: medium;
+    margin-left:10%;
+}
+.event-list p, h6{
+    padding-left:10px;
+    color:black;
+    padding-top:220px; 
+    font-size: 25px;
+}
+
+.member {
+    font-family:Poppins;
+    font-size: 2rem;
+    height:11rem;
+    width: 11rem;
+    border-radius:10px;
+    background-image: url('Members/Me.jpg');
+    background-size: contain;
+    background-position:center ;
+    background-repeat:no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease-in;
+    margin-bottom: 12px;
+}
+.member:hover{
+    cursor: pointer;
+    transform:scale(1.1)
+}
+
+.member p ,h6{
+    padding-left:29px;
+    padding-top:230px;
+}
+.right-bio{
+    padding:20px;
+}
+.divide{
+    padding-top: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:60px;
+    width:100%;
+    color: white;
+    background-color:transparent;
+}
+.event{
+    font-family:Poppins;
+    font-size: 4rem;
+    margin-top:70px;
+    height:14rem;
+    width: 45%;
+    border-radius:10px;
+    background-size: contain;
+    background-position:center ;
+    background-repeat:no-repeat;
+    border:3px solid white;
+    transition: 0.2s ease-in;
+}
+.event:hover{
+    cursor: pointer;
+    transform:scale(1.1)
+}
+.event1{
+    background-image: url('Event-images/Debug.webp');
+}
+.event1 p{
+    color: white;
+    margin-top:-10px;
+}
+.event2{
+    background-image: url('Event-images/Event-1.jpg');
+}
+.event3
+{
+    background-image: url('Event-images/Debuging.jpg');   
+}
+.event4{
+    background-image: url('Event-images/PyConZA.png');
+}
+.event5{
+    background-image: url('Event-images/python-image-bg.png');
+}
+
+.cord-img{
+    margin-left: 25%;
+    height:220px;
+    width: 220px;
+    background-color: antiquewhite;
+    border-radius: 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('Members/vasudev-sir.jpg');
+}
+
+.even-member{
+    padding-left:80px;
+}
+.member1{
+    background-image: url('Members/MY-img2.jpg');
+    background-size: contain;
+    
+
+}
+.member2{
+    background-image: url('Members/Gousiya-g.jpg');
+    background-size: contain;
+}
+.member3{
+    background-image: url('Members/Shantveer.jpg');
+}
+.member4{
+    background-image: url('Members/Abhijit.jpg');
+}
+.member5{
+    background-image: url();
+}
+.linkedin{
+    width:30px;
+    height:30px;
+    transition: 0.1s ease-in;
+}
+
+.linkedin:hover{
+    transform:scale(1.1);
+}
+
+.bio ul{
+    padding-left: 30px;
+    color: #fff;
+    list-style-type: none;
+}
+.bio li{
+    margin-bottom: 8px;
+    font-family: 'Great Vibes', cursive;
+}
+.bio{
+    cursor:text;
+    transition:cubic-bezier(1, 0, 0, 1) ease-in;
+}
+.bio:hover{
+    transform:scale(1.1);
+}
+.comman{
+    transition: transform 0.5s ease;
+}
+
+.comman.active{
+    transform: scale(1.15) ;
+}
+/* } */
+
+

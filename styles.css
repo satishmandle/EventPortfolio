@@ -245,12 +245,12 @@
     }
     .sir-image{
         /* background-color: rgb(110, 103, 103); */
+       /* border-radius: 50%; */
+        height:30%;
+        width: 98%;
+        background-image: url('Members/sir-fulll.jpg');
         background-size: contain;
         background-repeat: no-repeat;
-        height: 55%;
-        width: 95%;
-        border-radius: 40px;
-        background-image: url('Members/sir-3.jpg');
 
     }
     .outer-cord{
@@ -329,10 +329,11 @@
         font-size: large;
     } */
     .std-p{
-        border-radius: 40px;
-        height:5vh;
-        background-color: #fff;
-        color:   black;
+        /* border-radius: 40px; */
+        height:8vh;
+        border: 2px solid white;
+        background-color:transparent;
+        color:  2px, rgb(247, 246, 246);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -371,4 +372,64 @@
 .bio{
     color: #fff;
 }
+
+/* Container styling */
+.last-div {
+    margin-top:20vh;
+    overflow: hidden; /* Hide overflow to create scrolling effect */
+    width: 100vw;
+    height: 40vh;
+    position: relative;
+    background-color: #fff;
+    z-index: -1;
+}
+
+/* Inner container for scrolling */
+.scroll-container {
+    display: flex;
+    gap: 10px; /* Space between images */
+    position: absolute;
+    height:90vh;
+    margin:10px;
+    width: max-content; /* Allow content to extend beyond view */
+}
+
+/* Styling for each div with images */
+.last-1, .last-2 {
+    flex: 0 0 50vw; /* Each image fills half the viewport width */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.last-1 {
+    background: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('videos/img.jpg1.png'); /* Replace with actual image path */
+}
+
+.last-2 {
+    margin-left: 2vh;
+    background: #000000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('videos/img.jpg1.png'); /* Replace with actual image path */
+}
+
+
+
+
+
+
+
+
+
+}
+.comman{
+    transition: transform 0.6s ease-in;
+}
+
+.comman.active{
+    transform: scale(1.15) ;
 }

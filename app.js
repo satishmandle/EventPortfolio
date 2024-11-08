@@ -36,3 +36,59 @@ document.addEventListener('DOMContentLoaded', () => {
   // Start the animation
   scrollImages();
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll('.event-card');
+    const options = {
+        root: null, // Use the viewport as the root
+        rootMargin: '0px',
+        threshold: 0.5 // Trigger when 50% of the card is in view
+    };
+
+    // Callback function for the observer
+    const observerCallback = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active'); // Add active class when in center
+            } else {
+                entry.target.classList.remove('active'); // Remove when out of center
+            }
+        });
+    };
+
+    // Initialize the IntersectionObserver
+    const observer = new IntersectionObserver(observerCallback, options);
+    cards.forEach(card => observer.observe(card)); // Observe each card
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll('.event-card');
+  const options = {
+      root: null, // Use viewport as root
+      rootMargin: '0px',
+      threshold: 0.5 // Trigger when 50% of the card is visible
+  };
+
+  // Callback function for the observer
+  const observerCallback = (entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              // Add 'active' class to the centered card
+              entry.target.classList.add('active');
+          } else {
+              // Remove 'active' class when it's no longer centered
+              entry.target.classList.remove('active');
+          }
+      });
+  };
+
+  // Initialize IntersectionObserver
+  const observer = new IntersectionObserver(observerCallback, options);
+  cards.forEach(card => observer.observe(card)); // Observe each card
+});

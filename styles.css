@@ -1,3 +1,388 @@
+@media (min-width: 769px) and (max-width: 1200px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        height: 100%;
+        font-family: Arial, sans-serif;
+        padding: 0;
+    }
+
+    .smallicon {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    .out-logo {
+        display: flex;
+        align-items: flex-start;
+        height: 8vh;
+        width: 20vw;
+        padding-left: 4vw;
+    }
+
+    .py-logo {
+        width: auto;
+        height: 8vh;
+        margin-right: 1vw;
+        align-items: center;
+    }
+
+    .in-py {
+        margin-top: 3vh;
+        margin-left: -5vw;
+        height: 8vh;
+        width: 8vw;
+        background-size: cover;
+        background-image: url('videos/img.jpg1.png');
+    }
+
+    #background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .watsapp {
+        position:fixed;
+        padding-top: 3vh;
+        padding-left: 3vw;
+        height: 7vh;
+        width: 7vw;
+        margin-top: 80%;
+        margin-left: 85%;
+    }
+
+    .watsapp-logo img {
+        z-index: 3;
+        height: auto;
+        right: 0vw;
+        width: 5vw;
+        border-radius: 50%;
+        transition: 0.5s ease-in;
+    }
+
+    .head-section {
+        height: 12vh;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .py-icon {
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+        margin-top: 2vh;
+        margin-right: 1vw;
+        width: 30%;
+        border: 1px solid white;
+        border-radius: 25px;
+        background-color: white;
+        background-image: url('videos/aiet-LOGO.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: inherit;
+        left: 1vw;
+    }
+
+    .college {
+        font-size: 1.5vw;
+        padding-top: 2vh;
+        margin-right: -5vw;
+    }
+
+    .py-n {
+        height: auto;
+        width: 70%;
+        margin: 2vh auto;
+        background-color: transparent;
+        background-image: url('videos/Club-poster4.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 1vh;
+        right: -15vw;
+    }
+
+    .logo2 {
+        height: 8vh;
+        width: 18vw;
+        margin-top: 1vh;
+        background-color: transparent;
+        background-image: url('videos/poster-bg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 2vh;
+        right: -5vw;
+    }
+
+    .college-info {
+        margin-top: 10vh;
+        margin-left: 2.8vw;
+        height: 30vh;
+        width: 94%;
+        background-image: url('videos/AIET.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-bottom: 2vh;
+    }
+
+    .header {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: #fff;
+        padding-top: 5vh;
+        margin-top: 5vh;
+        border-radius: 10px;
+        border: 2px solid rgb(123, 125, 126);
+    }
+
+    .logo-container {
+        margin-right: 10%;
+        background-image: url('videos/img.jpg1.png');
+        background-position: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-self: flex-end;
+        align-self: center;
+        width: 80%;
+        height: 12rem;
+        padding-top: 5vh;
+        padding-right: 5vw;
+        transition: transform 0.2s ,ease-in-out;
+    }
+    .logo-container:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .clubname {
+        font-weight: 1000;
+        color: #fff;
+        font-size: 1.5vw;
+    }
+
+    .logo {
+        padding-top: 1vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        background-color: transparent;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .wellcome {
+        padding-top: 1vh;
+        padding-left: 5vw;
+        height: auto;
+        color: #fff;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2vh 0;
+    }
+
+    .sir-info {
+        padding-left: 5vw;
+        padding-top: 2vh;
+        list-style-type: none;
+        color: rgb(255, 255, 255);
+    }
+    
+    .sir-info ul {
+        margin-left: -2vw;
+        list-style-type: none;
+        font-family: Poppins;
+        padding-bottom: 2vh;
+    }
+
+    .sir-div {
+        margin: 10vw;
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+        height: 45vh;
+        width: 59vw;  /* Corrected from '59dvw' to '59vw' */
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .sir-image {
+        height: 180px;
+        width: 180px;
+        border-radius: 10%;
+        background-image: url('Members/Vasudev-sir.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+
+    .outer-cord{
+        margin: 5%;
+        height:45vh;
+        width:auto;
+        border-radius: 10%;
+    }
+
+    .cord{
+        font-size: 1.2rem;
+        margin-top: 5vh;
+        margin-left: 25vw;
+        color: rgb(248, 248, 248);
+    }
+
+    .std-p {
+        color: white;
+        font-family: Oswald;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1vh;
+        font-size: 3vh;
+    }
+
+    .bio {
+        height:20vh;
+        width: auto;
+    }
+
+    .bio ul{
+        padding-left: 5vw;
+        color:#fff;
+        list-style-type: none;
+    }
+
+    .even-bio{
+        color: #fff;
+        padding-right:5vw;
+    }
+
+    .even-bio ul{
+        list-style-type: none;
+    }
+
+    /* Laptop event list container */
+    .laptop-event-list {
+        display: flex;
+        flex-direction: row; /* Align items horizontally for larger screens */
+        justify-content: space-between; /* Space out the items evenly */
+        padding: 25px;
+        width: 80%;
+        margin: 20px auto;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    
+
+    .event-card {
+        flex: 1;
+        margin: 10px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 170px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0.8;
+    }
+
+    .event-card:hover {
+        transform: scale(1.1);
+    }
+
+    .event-image {
+        width: 100%;
+        height: 70%;
+        background-color: #ccc;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .event-details {
+        padding: 10px;
+        text-align: center;
+        color: #333;
+    }
+
+    .event-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .event-date {
+        font-size: 1.2rem;
+        color: #555;
+    }
+
+    .event-location {
+        font-size: 1rem;
+        color: #777;
+    }
+
+    .event-card .link {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+
+/*Mobile   -----------  Responsive Design--------------------------------------------------- */
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     * {
         margin: 0;
@@ -51,7 +436,7 @@
     }
 
     .watsapp {
-        position: fixed;
+        position:fixed;
         padding-top: 5vh;
         padding-left: 4vw;
         height: 10vh;
@@ -223,36 +608,36 @@
         list-style-type: none;
         color: rgb(255, 255, 255);
     }
-
+    
     .sir-info ul {
         margin-left: -2vw;
         list-style-type: none;
         font-family: Poppins;
         padding-bottom: 2vh;
     }
-
+    
     .sir-div {
         margin: 20vw;
         margin-bottom: 10vh;
         margin-top: 10vh;
-        /* background-color: #fff; */
         height: 45vh;
-        width: 59dvw;
+        width: 59vw;  /* Corrected from '59dvw' to '59vw' */
         display: flex;
         justify-content: space-between;
-        gap:20px;
+        gap: 20px;
         align-items: center;
     }
-    .sir-image{
-        /* background-color: rgb(110, 103, 103); */
-       /* border-radius: 50%; */
-        height:30%;
-        width: 98%;
-        background-image: url('Members/sir-fulll.jpg');
-        background-size: contain;
+    
+    .sir-image {
+        height: 160px;
+        width: 160px;
+        border-radius: 10%;
+        background-image: url('Members/Vasudev-sir.jpg');
+        background-size: cover; /* Ensures the image covers the area */
+        background-position: center; /* Centers the image */
         background-repeat: no-repeat;
-
     }
+    
     .outer-cord{
         margin: 10%;
         height:40vh;
@@ -308,7 +693,7 @@
         white-space: initial;
         padding-top: 2vh;
     } */
-
+/* 
     .event-list {
         background-color: white;
         height: auto;
@@ -321,7 +706,7 @@
         font-size: medium;
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 
     /* .event-items {
         color: rgb(0, 0, 0);
@@ -343,30 +728,99 @@
 .linkedin{
     height: 3vh;
 }
-.member{
-    height: 25vh;
-    width: 25vh;
-    border-radius: 15vh;
-    /* background-image: url('Members/Satish.jpg'); */
+
+.member-1{
     background-size: contain;
-    background-color: #fff;
-}
-.member1{
     background-image: url('Members/Satish.jpg');
 }
-.member2{
+.member-2{
     
     background-image: url('Members/Gousiya-g.jpg');
     background-size: contain;
 }
-.member3{
+.member-3{
+    background-size: contain;
     background-image: url('Members/Shantveer.jpg');
 }
-.member4{
+.member-4{
+    background-size: contain;
     background-image: url('Members/Abhijit.jpg');
 }
-.member5{
+.member-5{
     background-image: url();
+}
+.laptop-event-list {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center the items horizontally */
+    padding: 15px;
+    width: 90%;
+    margin: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Member image styling on mobile */
+.member-image {
+    width: 100px; /* Smaller size for mobile */
+    height: 100px;
+    background-color: #e0e0e0; /* Placeholder background */
+    border-radius: 50%;
+    margin-bottom: 15px; /* Space between image and info */
+    position: relative;
+}
+
+.member-image.has-img {
+    background-size: cover;
+    background-position: center;
+}
+
+/* LinkedIn logo for mobile */
+.linkedin-logo {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Member info styling */
+.member-info {
+    width: 100%;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+.member-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.member-info ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.member-info ul li i {
+    margin-right: 10px;
+    color: #0077b5; /* LinkedIn blue */
+}
+
+/* LinkedIn icon */
+.linkedin-icon {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px; /* Space between image and info */
+}
+
+/* Hide laptop event list on mobile */
+.laptop-event-list {
+    display: block;
 }
 
 .bio{
@@ -417,15 +871,74 @@
     background-image: url('videos/img.jpg1.png'); /* Replace with actual image path */
 }
 
+/* Container for all event cards */
 
+    .events-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 35px;
+        padding: 15px;
+        justify-content: center;
+        width: 100%;
+        scrollbar-width: none;
+        border: 2px solid #ccc;
+    }
 
+    /* Hide scrollbar for Chrome, Safari, and Edge */
+    .events-container::-webkit-scrollbar {
+        display: none;
+    }
 
+    .event-card {
+        flex-shrink: 0;
+        scroll-snap-align: center;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 170px;
+        /* margin-top: 1.5vh; */
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0.8;
+    }
 
+    /* Only the centered card should scale up */
+    .event-card.active {
+        transform: scale(1.2);
+        opacity: 1;
+    }
 
+    .event-card a {
+        text-decoration: none;
+        color:inherit;
+    }
 
+    .event-image {
+        width: 100%;
+        height: 70%;
+        background-color: #ccc;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
 
-
+    .event-card h3 {
+        margin: 0;
+        font-size: 14px;
+    }
 }
+
+
+
+
+
+
+
 .comman{
     transition: transform 0.6s ease-in;
 }

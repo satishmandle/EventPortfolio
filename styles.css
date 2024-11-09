@@ -1,4 +1,4 @@
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 2200px) {
     * {
         margin: 0;
         padding: 0;
@@ -80,12 +80,13 @@
     .py-icon {
         color: rgb(0, 0, 0);
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
         height: 100%;
         margin-top: 2vh;
-        margin-right: 1vw;
-        width: 30%;
-        border: 1px solid white;
+        margin-right: 20vw;
+        width: 8%;
+        /* border: 1px solid white; */
         border-radius: 25px;
         background-color: white;
         background-image: url('videos/aiet-LOGO.png');
@@ -95,11 +96,11 @@
         left: 1vw;
     }
 
-    .college {
+    /* .college {
         font-size: 1.5vw;
         padding-top: 2vh;
         margin-right: -5vw;
-    }
+    } */
 
     .py-n {
         height: auto;
@@ -127,14 +128,30 @@
     }
 
     .college-info {
-        margin-top: 10vh;
-        margin-left: 2.8vw;
-        height: 30vh;
-        width: 94%;
-        background-image: url('videos/AIET.jpg');
-        background-size: contain;
+        margin:5vw;
+        margin-left:5vw;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center; /* Centers horizontally */
+        align-items: center;     /* Centers vertically */
+        height: 45vh;           /* Set height of outer div if needed */
+        width:90vw;  
+        color:#fff;
+        /* background-color: #ffffff; */
+    }
+
+    .college-img   {
+        width:100%;            /* Adjust size of inner div */
+        height: 50vh;
+        background-color: lightblue;
+        margin-top:5%;
+        background-size: cover;
         background-repeat: no-repeat;
-        padding-bottom: 2vh;
+        background-image: url('videos/aiet-image2.jpg');
+
+    }
+    .about-clg{
+        margin:2vw;
     }
 
     .header {
@@ -215,64 +232,61 @@
         padding: 2vh 0;
     }
 
-    .sir-info {
-        padding-left: 5vw;
-        padding-top: 2vh;
-        list-style-type: none;
-        color: rgb(255, 255, 255);
-    }
-    
-    .sir-info ul {
-        margin-left: -2vw;
-        list-style-type: none;
-        font-family: Poppins;
-        padding-bottom: 2vh;
+    .outer-cord {
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        /* width:60w; */
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #e0e0e0; */
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
 
     .sir-div {
-        margin: 10vw;
-        margin-bottom: 10vh;
-        margin-top: 10vh;
-        height: 45vh;
-        width: 59vw;  /* Corrected from '59dvw' to '59vw' */
         display: flex;
-        justify-content: space-between;
-        gap: 20px;
         align-items: center;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f4f4f4;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 50%;
     }
 
     .sir-image {
-        height: 180px;
-        width: 180px;
-        border-radius: 10%;
-        background-image: url('Members/Vasudev-sir.jpg');
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #b0b0b0;
+        background-image: url('Members/Vasudev-sir.jpg'); /* Use coordinator's image path */
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
-    .outer-cord{
-        margin: 5%;
-        height:45vh;
-        width:auto;
-        border-radius: 10%;
+    .sir-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .cord{
-        font-size: 1.2rem;
-        margin-top: 5vh;
-        margin-left: 25vw;
-        color: rgb(248, 248, 248);
+    .sir-info h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 5px;
     }
 
-    .std-p {
-        color: white;
-        font-family: Oswald;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1vh;
-        font-size: 3vh;
+    .sir-info ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .sir-info li {
+        font-size: 1rem;
+        margin: 5px 0;
     }
 
     .bio {
@@ -309,69 +323,167 @@
     }
 
     
+    .events-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* Five cards per row */
+        gap: 20px;
+        padding: 20px;
+        justify-items: center;
+    }
 
     .event-card {
-        flex: 1;
-        margin: 10px;
+        width: 100%; /* Each card takes up full width of its column */
+        height: auto;
         transition: transform 0.3s ease, opacity 0.3s ease;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 160px;
-        height: 170px;
         background-color: #f4f4f4;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         opacity: 0.8;
     }
 
-    .event-card:hover {
-        transform: scale(1.1);
+    .event-card a {
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
     }
 
     .event-image {
-        width: 100%;
-        height: 70%;
+        width: 15vw;
+        height: 20vh; /* Adjust the height to suit your layout */
         background-color: #ccc;
-        border-radius: 5px;
-        background-position: center;
-        background-size: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
     }
 
-    .event-details {
-        padding: 10px;
-        text-align: center;
-        color: #333;
+    .event-card h3 {
+        margin: 0;
+        font-size: 1em;
+    }
+    
+
+    .outer-members{
+        display: flex;
+        gap:2vw;
     }
 
-    .event-title {
-        font-size: 1.5rem;
-        font-weight: bold;
+    .std-p{
+        /* border-radius: 40px; */
+        height:8vh;
+        border: 2px solid white;
+        background-color:transparent;
+        color:  2px, rgb(247, 246, 246);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5vh;
     }
+    
+.linkedin{
+    height: 3vh;
+}
 
-    .event-date {
-        font-size: 1.2rem;
-        color: #555;
-    }
+.member-1{
+    background-size: contain;
+    background-image: url('Members/Satish.jpg');
+}
+.member-2{
+    
+    background-image: url('Members/Gousiya-g.jpg');
+    background-size: contain;
+}
+.member-3{
+    background-size: contain;
+    background-image: url('Members/Shantveer.jpg');
+}
+.member-4{
+    background-size: contain;
+    background-image: url('Members/Abhijit.jpg');
+}
+.member-5{
+    background-image: url();
+}
+.laptop-event-list {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center the items horizontally */
+    padding: 15px;
+    width: 30%;
+    margin: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
 
-    .event-location {
-        font-size: 1rem;
-        color: #777;
-    }
+/* Member image styling on mobile */
+.member-image {
+    width: 100px; /* Smaller size for mobile */
+    height: 100px;
+    background-color: #e0e0e0; /* Placeholder background */
+    border-radius: 50%;
+    margin-bottom: 15px; /* Space between image and info */
+    position: relative;
+}
 
-    .event-card .link {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-        color: #fff;
-        text-align: center;
-        padding: 10px;
-        text-decoration: none;
-    }
+.member-image.has-img {
+    background-size: cover;
+    background-position: center;
+}
+
+/* LinkedIn logo for mobile */
+.linkedin-logo {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Member info styling */
+.member-info {
+    width: 100%;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+.member-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.member-info ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.member-info ul li i {
+    margin-right: 10px;
+    color: #0077b5; /* LinkedIn blue */
+}
+
+/* LinkedIn icon */
+.linkedin-icon {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px; /* Space between image and info */
+}
+
+/* Hide laptop event list on mobile */
+.laptop-event-list {
+    display: block;
+}
+
+.bio{
+    color: #fff;
+}
 }
 
 

@@ -128,6 +128,7 @@
     }
 
     .college-info {
+        text-overflow: hidden;
         margin:5vw;
         margin-left:5vw;
         display: flex;
@@ -141,16 +142,19 @@
     }
 
     .college-img   {
-        width:100%;            /* Adjust size of inner div */
+        width:80vw;            /* Adjust size of inner div */
         height: 50vh;
-        background-color: lightblue;
+        /* background-color: lightblue; */
         margin-top:5%;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         background-image: url('videos/aiet-image2.jpg');
 
     }
     .about-clg{
+        font-size: smaller;
+        height:40vh;
+        width:50vw;
         margin:2vw;
     }
 
@@ -625,14 +629,34 @@
 
     .college-info {
         /* background-color: #fff; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 8vh;
         margin-left: 2.8vw;
-        height: 35vh;
+        height: 94vh;
         width: 94%;
-        background-image: url('videos/AIET.jpg');
+        border-radius: 20px;
+        
+        /* padding-bottom: 2vh; */
+    }
+    .college-img{
+        height: 40vh;
+        width: 100%;
         background-size: contain;
         background-repeat: no-repeat;
-        padding-bottom: 2vh;
+        background-image: url('videos/AIET.jpg');
+    }   
+    .about-clg{
+        text-decoration: solid;
+        text-indent: 10px;
+        border: 2px solid white;
+        /* padding-bottom: 20vh; */
+        color: rgb(232, 224, 224);
+        /* background-color: aqua; */
+        justify-content: center;
+        align-items: center;
     }
 
     .header {
@@ -713,60 +737,57 @@
         align-items: center;
         padding: 2vh 0;
     }
+    .outer-cord {
+        margin: 5%;
+        height: auto;
+        width: auto;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: #1e1d1d;
+        background-color: #edebeb; /* Uncomment if you want a background color */
+    }
 
-    .sir-info {
-        padding-left: 5vw;
-        padding-top: 2vh;
-        list-style-type: none;
-        color: rgb(255, 255, 255);
-    }
-    
-    .sir-info ul {
-        margin-left: -2vw;
-        list-style-type: none;
-        font-family: Poppins;
-        padding-bottom: 2vh;
-    }
-    
+    /* Coordinator info and image container */
     .sir-div {
-        margin: 20vw;
-        margin-bottom: 10vh;
-        margin-top: 10vh;
-        height: 45vh;
-        width: 59vw;  /* Corrected from '59dvw' to '59vw' */
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        align-items: center;
+        margin: 0;
+        padding: 10px;
+        flex-direction: row-reverse; /* Stack image and info vertically */
+        align-items: top;
+        height: auto;
+        width: 100%;
+        gap: 10px;
     }
-    
+
+    /* Image styling */
     .sir-image {
-        height: 160px;
-        width: 160px;
-        border-radius: 10%;
-        background-image: url('Members/Vasudev-sir.jpg');
-        background-size: cover; /* Ensures the image covers the area */
-        background-position: center; /* Centers the image */
+        height: 120px; /* Smaller height for mobile */
+        width: 120px; /* Smaller width for mobile */
+        border-radius: 50%;
+        /* margin-left:50%; */
+        background-image: url('Members/Vasudev-sir.jpg'); /* Circular shape for mobile */
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
     }
-    
-    .outer-cord{
-        margin: 10%;
-        height:40vh;
-        width:auto;
-        /* background-color: #b5865d; */
-        border-radius: 10%;
-       
+
+    /* Coordinator info styling */
+    .sir-info {
+        padding: 0;
+        text-align: center;
+        color: black;
     }
 
-    .cord{
-        font-size: 1.5rem;
-        margin-top: 7vh;
-        margin-bottom: -15vh;
-        /* background-color: blue; */
-        color: rgb(248, 248, 248);
-        margin-left: 29vw;
+    .sir-info ul {
+        margin: 0;
+        padding: 0;
+        font-family: Poppins, sans-serif;
+        list-style-type: none;
     }
+
+    .sir-info h2 {
+        font-size: 1.2em;
+    }
+
 
     .std-p {
         color: white;
@@ -984,72 +1005,54 @@
 }
 
 /* Container for all event cards */
-
+@media (max-width: 768px) {
+    /* Container for all event cards */
     .events-container {
         display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 35px;
-        padding: 15px;
-        justify-content: center;
-        width: 100%;
-        scrollbar-width: none;
-        border: 2px solid #ccc;
+        flex-wrap: wrap;
+        gap: 10px; /* Space between cards */
+        padding: 10px;
     }
 
-    /* Hide scrollbar for Chrome, Safari, and Edge */
-    .events-container::-webkit-scrollbar {
-        display: none;
-    }
-
+    /* Style for each event card */
     .event-card {
-        flex-shrink: 0;
-        scroll-snap-align: center;
-        transition: transform 0.3s ease, opacity 0.3s ease;
+        width: 48%; /* Two cards per row on mobile */
+        background-color: #f0f0f0;
+        overflow: hidden;
         position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 160px;
-        height: 170px;
-        /* margin-top: 1.5vh; */
-        background-color: #f4f4f4;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        opacity: 0.8;
-    }
-
-    /* Only the centered card should scale up */
-    .event-card.active {
-        transform: scale(1.2);
-        opacity: 1;
+        border-radius: 8px;
     }
 
     .event-card a {
+        display: block;
         text-decoration: none;
-        color:inherit;
+        color: inherit;
     }
 
+    /* Make the event image fill the entire div */
     .event-image {
         width: 100%;
-        height: 70%;
-        background-color: #ccc;
+        height: 150px; /* Height for mobile view */
+        background-size: cover;
+        background-position: center;
         border-radius: 8px;
-        margin-bottom: 10px;
     }
 
+    /* Style for the event title */
     .event-card h3 {
-        margin: 0;
-        font-size: 14px;
+        text-align: center;
+        margin: 10px 0;
+        font-size: 1em;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
     }
 }
 
-
-
-
-
-
+}
 
 .comman{
     transition: transform 0.6s ease-in;
@@ -1058,3 +1061,55 @@
 .comman.active{
     transform: scale(1.15) ;
 }
+/* Navbar Styles */
+.main-header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-item {
+    text-align: center;
+}
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-item a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Banner Styles */
+.banner {
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+

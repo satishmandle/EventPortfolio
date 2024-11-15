@@ -7,3 +7,17 @@ document.querySelectorAll('#delay').forEach(link => {
         }, 100); // 1000ms delay (1 second)
     });
 });
+
+
+// loader
+// script.js
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      // Hide loader
+      document.getElementById("loader").style.display = "none";
+  
+      // Show main page
+    //   document.getElementById("main-page").style.display = "block";
+    }, 3000); 
+  });
+  

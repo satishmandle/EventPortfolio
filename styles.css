@@ -428,8 +428,8 @@
 }
 
 .member-1{
-    background-size: contain;
-    background-image: url('Members/Satish.jpg');
+    background-size:cover ;
+    background-image: url('Members/me-2.jpg');
 }
 .member-2{
     
@@ -444,8 +444,11 @@
     background-size: contain;
     background-image: url('Members/Abhijit.jpg');
 }
+
 .member-5{
-    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('Members/TEJA.jpg');
 }
 .laptop-event-list {
     display: flex;
@@ -899,8 +902,8 @@
 }
 
 .member-1{
-    background-size: contain;
-    background-image: url('Members/Satish.jpg');
+    background-size:cover ;
+    background-image: url('Members/me-2.jpg');
 }
 .member-2{
     
@@ -915,8 +918,11 @@
     background-size: contain;
     background-image: url('Members/Abhijit.jpg');
 }
+
 .member-5{
-    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('Members/TEJA.jpg');
 }
 
 .outer-members{

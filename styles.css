@@ -546,10 +546,9 @@
     }
 
     body, html {
-        height: 100%;
-        font-family: Arial, sans-serif;
-        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal overflow */
     }
+    
 
     .smallicon {
         height: 10vw;

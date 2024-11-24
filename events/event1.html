@@ -11,7 +11,26 @@
         <h1>Event 1: AI Innovations</h1>
         <p>Join us for an exciting exploration into the latest advancements in Artificial Intelligence. This event will feature expert talks, demonstrations, and workshops that will expand your understanding of AI and its real-world applications.</p>
         <a href="../index.html" class="back-button">Back to Main Page</a>
-        <a href="register" class="back-button"> Register </a>
+        <a href="register" class="register"> Register </a>
     </div>
 </body>
+
+<script>    
+   const BackBtn = document.querySelector('.back-button');
+
+   if(BackBtn){
+    BackBtn.addEventListener('click' ,function(e){
+        e.preventDefault();
+       
+
+        setTimeout(function(){
+            window.location.href="../index.html";
+        
+        },1000);
+    });
+   }
+   
+
+   
+</script>
 </html>
